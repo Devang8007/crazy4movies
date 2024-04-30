@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <div class="container">
+                <a href="main.html"><p>Crazy4<span>Movies.</span></p></a>  <br> <br><br> <br>
+                <p style="font-size: 1.5rem;" id="netflix">Netflix</p><br> <br>
+        </div>
+       
+     </div>
+         <!-- end of logo -->
+         <!-- search container -->
+        
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+                <div class="search-list" id="search-list"></div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+         <!-- result container -->
+         <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here -->
+                    <!-- <div class = "movie-poster">
+                        <img src = "medium-cover.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+
+        <!-- trending movies slider -->
+        <!-- Update the HTML markup -->
+        <div class="container">
+            <div class = "logo">
+                
+                <div class = "container">
+                    <p>Netflix's <span>Series</span></p>
+                </div>
+                <br>
+<div class="trending-movies">
+    
+    <div class="trending-grid">
+        <div class="movie-poster-container" onclick="redirectToReview('Wednesday')">
+           <img src="./images/Wednesday.png" alt="">
+            <div class="movie-title-overlay">Wednesday</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="allofusaredead.html"><img src="./images/all of us are dead.jpg" alt=""></a>
+            <div class="movie-title-overlay">All of Us Are Dead</div>
+        </div>
+       
+        <div class="movie-poster-container" onclick="redirectToReview('Stranger Things')">
+            <img src="./images/Stranger Things.webp" alt="">
+            <div class="movie-title-overlay">Stranger Things</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Cobra Kai')">
+           <img src="./images/cobra Kai.jpg" alt="">
+            <div class="movie-title-overlay">Cobra Kai</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Money Heist')">
+            <img src="./images/Moneyheist.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==" alt="">
+            <div class="movie-title-overlay">Money Heist</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="squidgame.html"><img src="./images/squidgame.jpg" alt=""></a>
+            <div class="movie-title-overlay">Squid Game</div>
+        </div>
+    </div>
+</div>
+<br><br><hr>
+<div class="container">
+    <div class = "logo">
+        
+        <div class = "container">
+            <p>Netflix's <span>Movies</span></p>
+        </div>
+        <br>
+<div class="trending-movies">
+    
+    <div class="trending-grid">
+        <div class="movie-poster-container" onclick="redirectToReview('RRR')">
+           <img src="./images/RRR.jpg" alt="">
+            <div class="movie-title-overlay">RRR</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('LEO')">
+            <img src="./images/LEO.jpg" alt="">
+            <div class="movie-title-overlay">LEO</div>
+        </div>
+       
+        <div class="movie-poster-container" onclick="redirectToReview('RDX Robert Dony Xavier')">
+            <img src="./images/RDX.jpg" alt="">
+            <div class="movie-title-overlay">RDX</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Hi nanna')">
+           <img src="./images/Hi nanna.jpg" alt="">
+            <div class="movie-title-overlay">Hi nanna</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Minnal Murali')">
+            <img src="./images/Minnal Murali.jpg" alt="">
+            <div class="movie-title-overlay">Minnal Murali</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Ala Vaikunthapurramuloo')">
+            <img src="./images/Ala_Vaikunthapurramuloo.jpeg" alt="">
+            <div class="movie-title-overlay">Ala Vaikunthapurramuloo</div>
+        </div>
+    </div>
+</div>
+<br><br><hr>
+
+<div class="container1">
+    <div class="text-content">
+        <h1>Download your shows to watch offline from Netflix</h1>
+        <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="images/stranger things moblile.jpg" alt="Stranger Things">
+        <p class="image-text">Downloading...</p>
+    </div>
+</div>
+<br><br>
+        <!-- footer -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/devang-sharma-94b4722b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a>
+                <a href="https://x.com/DevangShar46213?t=A6te9-opCyuLrdECU4908w&s=09" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/devang_8007?igsh=MTZ0ZHVxd3BrcjE0Ng==" target="_blank">Instagram</a>
+                
+            </div>
+            <p class="copyright">&copy; 2024 Movie Review Site. All rights reserved.</p>
+        </footer>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>

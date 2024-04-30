@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <div class="container">
+                <p>Crazy4<span>Movies.</span></p><br> <br>
+                
+               <div class="links">
+                    <a href="netflix.html">Netflix</a>
+                    <a href="amazonp.html">Amazon Prime</a>
+                    <a href="jiocinema.html">Jio Cinema</a>
+                    <a href="disney.html">Hotstar</a>
+               </div>
+        </div>
+     </div>
+         <!-- end of logo -->
+         <!-- search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+                <div class="search-list" id="search-list"></div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here -->
+                    <div class = "movie-poster">
+                        <img src = "medium-cover.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div>
+                </div>
+            </div><hr>
+        </div>
+        <!-- end of result container -->
+
+        <!-- trending movies slider -->
+        <!-- Update the HTML markup -->
+        <div class="container">
+            <div class = "logo">
+                
+                <div class = "container">
+                    <p>Trend<span>ing.</span></p>
+                </div>
+                <br>
+<div class="trending-movies">
+    <h4>Galaxy System</h4>
+    <div class="trending-grid">
+        <div class="movie-poster-container" onclick="redirectToReview('All of Us Are Dead')">
+            <img src="./images/all of us are dead.jpg" alt="">
+            <div class="movie-title-overlay">All of Us Are Dead</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="Dune.html"><img src="./images/Dune2.jpg" alt=""></a>
+            <div class="movie-title-overlay">Dune 2</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="Extraction.html"><img src="./images/Extraciton.cHJkLWVtcy1hc3NldHMvbW92aWVzL2Q1MmE0YWI4LWM2ODItNDU4Ny1iNzk0LTM2NDgzZjVhYWU5Ni5qcGc=" alt=""></a>
+            <div class="movie-title-overlay">Extraciton</div>
+        </div>
+        <div class="movie-poster-container">
+           <a href="avatar.html"><img src="./images/Avatar.jpeg" alt=""></a> 
+            <div class="movie-title-overlay">Avatar</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="hanuman.html"><img src="./images/hanuman.avif" alt=""></a>
+            <div class="movie-title-overlay">Hanuman</div>
+        </div>
+        <div class="movie-poster-container">
+            <a href="squidgame.html"><img src="./images/squidgame.jpg" alt=""></a>
+            <div class="movie-title-overlay">Squid Game</div>
+        </div>
+    </div>
+</div>
+<br><br><hr>
+<div class="container">
+    <div class = "logo">
+        
+        <div class = "container">
+            <p>Upcoming<span> Indian Movies</span></p>
+        </div>
+        <br>
+<div class="trending-movies">
+    <h4>Galaxy System</h4>
+    <div class="trending-grid">
+        <div class="movie-poster-container" onclick="redirectToReview('Pushpa 2: The Rule')">
+            <img src="./images/pushpa 2.jpg" alt="">
+            <div class="movie-title-overlay">Pushpa 2: The Rule</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Kalki 2898 AD')">
+            <img src="./images/Kalki 2898 AD.jpg" alt="">
+            <div class="movie-title-overlay">Kalki 2898 AD</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('The Greatest of All Time')">
+            <img src="./images/GOAT.jpg"">
+            <div class="movie-title-overlay">GOAT</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Toxic')">
+           <img src="./images/Toxic.jpg" alt="">
+            <div class="movie-title-overlay">Toxic</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Coolie')">
+            <img src="./images/coolie.jpg" alt="">
+            <div class="movie-title-overlay">Coolie</div>
+        </div>
+        <div class="movie-poster-container" onclick="redirectToReview('Godachari: 2')">
+            <img src="./images/G2.jpg" alt="">
+            <div class="movie-title-overlay">Godachari: 2</div>
+        </div>
+    </div>
+</div>
+<br><br><hr>
+<div class="container">
+    <div class = "logo">
+        
+        <div class = "container">
+            <p>Stay tuned for <span> future updates</span></p>
+        </div>
+        <br><br>
+
+<section id="about-us-section"  class="about-section">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to our movie review site! We're a passionate group of college students with a shared love for cinema and storytelling. As avid movie enthusiasts, we understand the excitement of discovering a hidden gem or experiencing the thrill of a blockbuster hit. That's why we've created this platform to share our thoughts, insights, and recommendations with fellow movie buffs like you.
+
+            Our Mission
+            Our mission is simple: to provide honest, unbiased, and informative reviews of the latest films. Whether it's a Hollywood blockbuster, an indie masterpiece, or a foreign gem, we're here to help you navigate the vast world of cinema. We believe that every movie has a story to tell and deserves to be celebrated, critiqued, and discussed.
+            
+            What Sets Us Apart
+            What sets us apart from other movie review sites? It's our unique perspective and personal touch. As college students, we bring a fresh and dynamic outlook to the world of film criticism. We're not professional critics or industry insiders – we're just like you, passionate movie lovers with a desire to share our thoughts and opinions.
+            
+            Our Approach
+            Our approach to movie reviews is simple: authenticity, integrity, and passion. We believe in providing honest and insightful reviews that reflect our genuine reactions and emotions. Whether we love a film, hate it, or fall somewhere in between, you can trust that our reviews are always genuine and heartfelt.
+            
+            Join Our Community
+            We invite you to join our growing community of movie enthusiasts! Explore our site, read our reviews, and share your own thoughts and opinions. Whether you agree with us or not, we value your input and welcome healthy discussions and debates. Together, let's celebrate the magic of cinema and discover the next great masterpiece!</p>
+    </div>
+</section>
+
+<section  id="contact-us-section" class="contact-section">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to reach out to us using the contact information provided below:</p><br>
+
+           <p> Email</p><br>
+            <p>📧 Email:devangsharma1357@gmail.com</p><br>
+            
+           <p> Drop us an email anytime, and our team will get back to you as soon as possible. Whether you have inquiries about our reviews, partnership opportunities, or general feedback, we're here to help!</p><br>
+            
+            <p>Social Media</p><br>
+           <p> Connect with us on social media to stay updated on the latest movie reviews, news, and discussions:</p><br>
+            
+            <p>📱 Twitter: @Devang Sharma </p>
+            
+            <p>📱 Facebook: Devang Sharma</p>
+            
+            <p>📱 Instagram: @devang_8007 </p><br>
+            
+           <p> Follow us for exclusive content, behind-the-scenes glimpses, and interactive polls and quizzes. We love engaging with our audience and sharing our passion for cinema!</p><br>
+        <p>Phone:8007621707</p>
+    </div>
+</section>
+
+
+    
+    <br><br>
+        <!-- footer -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/devang-sharma-94b4722b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a>
+                <a href="https://x.com/DevangShar46213?t=A6te9-opCyuLrdECU4908w&s=09" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/devang_8007?igsh=MTZ0ZHVxd3BrcjE0Ng==" target="_blank">Instagram</a>
+                
+            </div>
+            <p class="copyright">&copy; 2024 Movie Review Site. All rights reserved.</p>
+        </footer>
+    </div>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
